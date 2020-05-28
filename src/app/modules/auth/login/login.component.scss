@@ -1,0 +1,13 @@
+.login-wrapper{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .login-form{
+    width: 360px;
+    .logo{
+      height: 100px;
+      width: 100px;
+    }
+  }
+}

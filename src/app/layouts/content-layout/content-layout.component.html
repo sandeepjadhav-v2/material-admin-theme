@@ -1,0 +1,37 @@
+
+<div class="main-wrapper">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">Responsive App</h1>
+    <div class="spacer"></div>
+    <div>
+      <button mat-button [matMenuTriggerFor]="menu">
+        <img src="assets/logo/sample_logo.png" class="user-pic"> Sandeep Jadhav
+      </button>
+      <mat-menu #menu="matMenu" xPosition="after">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Sign Out</button>
+      </mat-menu>
+    </div>
+
+
+  </mat-toolbar>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="sidenav">
+       <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard"><span class="material-icons">dashboard</span>Dashobard</a>
+        <a mat-list-item routerLink="/users" ><span class="material-icons">group</span>Users</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="breadcrumb-wrapper relative">
+        <app-breadcrumb></app-breadcrumb>
+      </div>
+      <div class="relative">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>

@@ -1,0 +1,41 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .material-icons{
+    padding-right: 10px;
+  }
+  .mat-sidenav-content{
+    padding: 10px;
+  }
+  .spacer{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+  }
+  .user-pic{
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.sidenav-container {
+  flex: 1;
+}
+.mat-sidenav.sidenav{
+  width: 250px;
+}
+
+.relative{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.breadcrumb-wrapper{
+  border: 1px solid #ccc;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
